@@ -32,4 +32,4 @@ trainer = pl.Trainer(gpus=1, precision=32, callbacks=[logger])
 
 
 # Train!
-trainer.validate(model, dataloader, callbacks=[logger])
+trainer.validate(model, dataloader)
